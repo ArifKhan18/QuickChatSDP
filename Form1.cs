@@ -288,7 +288,7 @@ namespace QuickChat
         {
             if (Guna2CircleProgressBar1.Value < 100)
             {
-                Guna2CircleProgressBar1.Value +=5;
+                Guna2CircleProgressBar1.Value +=6;
             }
             else
             {
