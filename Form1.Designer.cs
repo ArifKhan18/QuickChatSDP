@@ -32,13 +32,17 @@
             this.ButtonLogin = new Guna.UI.WinForms.GunaButton();
             this.ButtonRegister = new Guna.UI.WinForms.GunaButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
             this.ppp = new Guna.UI.WinForms.GunaTextBox();
+            this.guna2CustomCheckBox2 = new Guna.UI2.WinForms.Guna2CustomCheckBox();
             this.zzz = new Guna.UI.WinForms.GunaTextBox();
             this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.Panel2 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.guna2CustomCheckBox1 = new Guna.UI2.WinForms.Guna2CustomCheckBox();
             this.confirmpassordText = new Guna.UI.WinForms.GunaTextBox();
             this.passwordText = new Guna.UI.WinForms.GunaTextBox();
             this.emailText = new Guna.UI.WinForms.GunaTextBox();
@@ -58,10 +62,6 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.GunaCirclePictureBox1 = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.guna2CustomCheckBox1 = new Guna.UI2.WinForms.Guna2CustomCheckBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.guna2CustomCheckBox2 = new Guna.UI2.WinForms.Guna2CustomCheckBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox2)).BeginInit();
@@ -141,6 +141,17 @@
             this.panel1.Size = new System.Drawing.Size(548, 401);
             this.panel1.TabIndex = 9;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(341, 216);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(133, 20);
+            this.label8.TabIndex = 20;
+            this.label8.Text = "Show Password";
+            // 
             // ppp
             // 
             this.ppp.BackColor = System.Drawing.Color.Transparent;
@@ -160,6 +171,25 @@
             this.ppp.SelectedText = "";
             this.ppp.Size = new System.Drawing.Size(321, 32);
             this.ppp.TabIndex = 30;
+            // 
+            // guna2CustomCheckBox2
+            // 
+            this.guna2CustomCheckBox2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2CustomCheckBox2.CheckedState.BorderRadius = 2;
+            this.guna2CustomCheckBox2.CheckedState.BorderThickness = 0;
+            this.guna2CustomCheckBox2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2CustomCheckBox2.CheckedState.Parent = this.guna2CustomCheckBox2;
+            this.guna2CustomCheckBox2.Location = new System.Drawing.Point(315, 215);
+            this.guna2CustomCheckBox2.Name = "guna2CustomCheckBox2";
+            this.guna2CustomCheckBox2.ShadowDecoration.Parent = this.guna2CustomCheckBox2;
+            this.guna2CustomCheckBox2.Size = new System.Drawing.Size(20, 20);
+            this.guna2CustomCheckBox2.TabIndex = 19;
+            this.guna2CustomCheckBox2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2CustomCheckBox2.UncheckedState.BorderRadius = 2;
+            this.guna2CustomCheckBox2.UncheckedState.BorderThickness = 0;
+            this.guna2CustomCheckBox2.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2CustomCheckBox2.UncheckedState.Parent = this.guna2CustomCheckBox2;
+            this.guna2CustomCheckBox2.CheckedChanged += new System.EventHandler(this.guna2CustomCheckBox2_CheckedChanged);
             // 
             // zzz
             // 
@@ -264,6 +294,36 @@
             this.Panel2.Name = "Panel2";
             this.Panel2.Size = new System.Drawing.Size(548, 401);
             this.Panel2.TabIndex = 10;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(387, 354);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(133, 20);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "Show Password";
+            // 
+            // guna2CustomCheckBox1
+            // 
+            this.guna2CustomCheckBox1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2CustomCheckBox1.CheckedState.BorderRadius = 2;
+            this.guna2CustomCheckBox1.CheckedState.BorderThickness = 0;
+            this.guna2CustomCheckBox1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2CustomCheckBox1.CheckedState.Parent = this.guna2CustomCheckBox1;
+            this.guna2CustomCheckBox1.Location = new System.Drawing.Point(442, 331);
+            this.guna2CustomCheckBox1.Name = "guna2CustomCheckBox1";
+            this.guna2CustomCheckBox1.ShadowDecoration.Parent = this.guna2CustomCheckBox1;
+            this.guna2CustomCheckBox1.Size = new System.Drawing.Size(20, 20);
+            this.guna2CustomCheckBox1.TabIndex = 18;
+            this.guna2CustomCheckBox1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2CustomCheckBox1.UncheckedState.BorderRadius = 2;
+            this.guna2CustomCheckBox1.UncheckedState.BorderThickness = 0;
+            this.guna2CustomCheckBox1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2CustomCheckBox1.UncheckedState.Parent = this.guna2CustomCheckBox1;
+            this.guna2CustomCheckBox1.CheckedChanged += new System.EventHandler(this.guna2CustomCheckBox1_CheckedChanged);
             // 
             // confirmpassordText
             // 
@@ -529,66 +589,6 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // guna2CustomCheckBox1
-            // 
-            this.guna2CustomCheckBox1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CustomCheckBox1.CheckedState.BorderRadius = 2;
-            this.guna2CustomCheckBox1.CheckedState.BorderThickness = 0;
-            this.guna2CustomCheckBox1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CustomCheckBox1.CheckedState.Parent = this.guna2CustomCheckBox1;
-            this.guna2CustomCheckBox1.Location = new System.Drawing.Point(442, 331);
-            this.guna2CustomCheckBox1.Name = "guna2CustomCheckBox1";
-            this.guna2CustomCheckBox1.ShadowDecoration.Parent = this.guna2CustomCheckBox1;
-            this.guna2CustomCheckBox1.Size = new System.Drawing.Size(20, 20);
-            this.guna2CustomCheckBox1.TabIndex = 18;
-            this.guna2CustomCheckBox1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CustomCheckBox1.UncheckedState.BorderRadius = 2;
-            this.guna2CustomCheckBox1.UncheckedState.BorderThickness = 0;
-            this.guna2CustomCheckBox1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CustomCheckBox1.UncheckedState.Parent = this.guna2CustomCheckBox1;
-            this.guna2CustomCheckBox1.CheckedChanged += new System.EventHandler(this.guna2CustomCheckBox1_CheckedChanged);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(387, 354);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(133, 20);
-            this.label7.TabIndex = 19;
-            this.label7.Text = "Show Password";
-            // 
-            // guna2CustomCheckBox2
-            // 
-            this.guna2CustomCheckBox2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CustomCheckBox2.CheckedState.BorderRadius = 2;
-            this.guna2CustomCheckBox2.CheckedState.BorderThickness = 0;
-            this.guna2CustomCheckBox2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CustomCheckBox2.CheckedState.Parent = this.guna2CustomCheckBox2;
-            this.guna2CustomCheckBox2.Location = new System.Drawing.Point(315, 215);
-            this.guna2CustomCheckBox2.Name = "guna2CustomCheckBox2";
-            this.guna2CustomCheckBox2.ShadowDecoration.Parent = this.guna2CustomCheckBox2;
-            this.guna2CustomCheckBox2.Size = new System.Drawing.Size(20, 20);
-            this.guna2CustomCheckBox2.TabIndex = 19;
-            this.guna2CustomCheckBox2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CustomCheckBox2.UncheckedState.BorderRadius = 2;
-            this.guna2CustomCheckBox2.UncheckedState.BorderThickness = 0;
-            this.guna2CustomCheckBox2.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CustomCheckBox2.UncheckedState.Parent = this.guna2CustomCheckBox2;
-            this.guna2CustomCheckBox2.CheckedChanged += new System.EventHandler(this.guna2CustomCheckBox2_CheckedChanged);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(341, 216);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(133, 20);
-            this.label8.TabIndex = 20;
-            this.label8.Text = "Show Password";
             // 
             // Form1
             // 

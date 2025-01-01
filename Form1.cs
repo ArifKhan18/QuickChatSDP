@@ -22,7 +22,8 @@ namespace QuickChat
         public Form1()
         {
             InitializeComponent();
-           
+            this.KeyPreview = true; // Allow the form to preview key events
+            this.KeyDown += Form1_KeyDown; // Attach the KeyDown event
 
         }
         string constring = "Data Source=DESKTOP-2IK592G\\SQLEXPRESS;Initial Catalog=firsttime;Integrated Security=True";
@@ -380,5 +381,28 @@ namespace QuickChat
         {
 
         }
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (panel1.Visible) // If Login panel is active
+                {
+                    gunaButton1_Click_1(sender, e); // Trigger login button click
+                }
+                else if (Panel2.Visible) // If Register panel is active
+                {
+                    gunaButton2_Click(sender, e); // Trigger register button click
+                }
+            }
+        }
+
+        //private void Form1_KeyDown(object sender, KeyEventArgs e)
+        //{
+        //    if (e.KeyCode == Keys.Enter)
+        //    {
+        //        // Trigger the login button click event
+        //        gunaButton1_Click_1(sender, e); // Assuming `gunaButton1_Click_1` is your login button's click handler
+        //    }
+        //}
     }
 }

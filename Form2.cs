@@ -25,8 +25,9 @@ namespace QuickChat
             panel4.Visible = false;
             panel5.Visible = false;
             panel6.Visible = false;
-           
-            
+            this.KeyPreview = true; // Allow the form to capture key events
+            this.KeyDown += Form2_KeyDown; // Attach the KeyDown event
+
         }
 
         string constring = "Data Source=DESKTOP-2IK592G\\SQLEXPRESS;Initial Catalog=firsttime;Integrated Security=True";
@@ -459,6 +460,14 @@ namespace QuickChat
                 panel5.Visible = false;
             }
         }
+        private void Form2_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                gunaButton3_Click_1(sender, e); // Trigger the register button logic
+            }
+        }
+
     }
 }
 

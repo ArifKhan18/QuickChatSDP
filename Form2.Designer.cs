@@ -63,6 +63,7 @@
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.userControl22 = new QuickChat.UserControl2();
             this.userControl32 = new QuickChat.UserControl3();
+            this.gunaCirclePictureBox5 = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.gunaButton3 = new Guna.UI.WinForms.GunaButton();
             this.mmbox = new Guna.UI.WinForms.GunaTextBox();
@@ -73,7 +74,6 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.gunaCirclePictureBox4 = new Guna.UI.WinForms.GunaCirclePictureBox();
-            this.gunaCirclePictureBox5 = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -88,11 +88,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox3)).BeginInit();
             this.flowLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox5)).BeginInit();
             this.panel7.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -566,9 +566,21 @@
             this.userControl32.TabIndex = 1;
             this.userControl32.Title = null;
             // 
+            // gunaCirclePictureBox5
+            // 
+            this.gunaCirclePictureBox5.BaseColor = System.Drawing.Color.White;
+            this.gunaCirclePictureBox5.Image = global::QuickChat.Properties.Resources.new_logo;
+            this.gunaCirclePictureBox5.Location = new System.Drawing.Point(108, 140);
+            this.gunaCirclePictureBox5.Name = "gunaCirclePictureBox5";
+            this.gunaCirclePictureBox5.Size = new System.Drawing.Size(265, 250);
+            this.gunaCirclePictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.gunaCirclePictureBox5.TabIndex = 15;
+            this.gunaCirclePictureBox5.TabStop = false;
+            this.gunaCirclePictureBox5.UseTransfarantBackground = false;
+            // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(32)))));
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(44)))));
             this.panel7.Controls.Add(this.gunaButton3);
             this.panel7.Controls.Add(this.mmbox);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -631,7 +643,7 @@
             // flowLayoutPanel2
             // 
             this.flowLayoutPanel2.AutoScroll = true;
-            this.flowLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(32)))));
+            this.flowLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(44)))));
             this.flowLayoutPanel2.Controls.Add(this.userControl12);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(609, 0);
@@ -641,7 +653,7 @@
             // 
             // userControl12
             // 
-            this.userControl12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(32)))));
+            this.userControl12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(44)))));
             this.userControl12.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userControl12.Icon = null;
             this.userControl12.Location = new System.Drawing.Point(3, 3);
@@ -702,18 +714,6 @@
             this.gunaCirclePictureBox4.TabStop = false;
             this.gunaCirclePictureBox4.UseTransfarantBackground = false;
             // 
-            // gunaCirclePictureBox5
-            // 
-            this.gunaCirclePictureBox5.BaseColor = System.Drawing.Color.White;
-            this.gunaCirclePictureBox5.Image = global::QuickChat.Properties.Resources.new_logo;
-            this.gunaCirclePictureBox5.Location = new System.Drawing.Point(108, 140);
-            this.gunaCirclePictureBox5.Name = "gunaCirclePictureBox5";
-            this.gunaCirclePictureBox5.Size = new System.Drawing.Size(265, 250);
-            this.gunaCirclePictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gunaCirclePictureBox5.TabIndex = 15;
-            this.gunaCirclePictureBox5.TabStop = false;
-            this.gunaCirclePictureBox5.UseTransfarantBackground = false;
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -748,12 +748,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox3)).EndInit();
             this.flowLayoutPanel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox5)).EndInit();
             this.panel7.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
