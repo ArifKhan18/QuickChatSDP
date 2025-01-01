@@ -40,7 +40,7 @@ namespace QuickChat
         {
 
             Timer timer = new Timer();
-            timer.Interval = (10 * 1000); // Set interval to 10 seconds
+            timer.Interval = (5 * 1000); // Set interval to 10 seconds
             timer.Tick += new EventHandler(timer2_Tick);
             timer.Start();
 

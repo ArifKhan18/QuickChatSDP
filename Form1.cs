@@ -24,7 +24,6 @@ namespace QuickChat
             InitializeComponent();
             this.KeyPreview = true; // Allow the form to preview key events
             this.KeyDown += Form1_KeyDown; // Attach the KeyDown event
-
         }
         string constring = "Data Source=DESKTOP-2IK592G\\SQLEXPRESS;Initial Catalog=firsttime;Integrated Security=True";
         private string HashPassword(string password)
